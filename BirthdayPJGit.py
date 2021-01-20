@@ -5,7 +5,7 @@
 #! Python Version 3.9.1
 
 """
-模块功能：读取当前文件夹里的Excel文件，打印内容
+模块功能：读取当前文件夹里的Excel文件，发送某旦学邮
 """
 
 import pandas as pd
@@ -81,7 +81,6 @@ def send(df):
             year = now[0:4]
         else:
             year = str(int(now[0:4])+1)
-        
         print(year, month, day)
         driver.find_element_by_xpath('//*[@id="timeSetContainer"]/p[1]/select[1]').find_element_by_xpath("//option[@value='%s']"%(year)).click()
         driver.find_element_by_xpath('//*[@id="timeSetContainer"]/p[1]/select[2]').find_element_by_xpath("//option[@value='%s']"%(str(int(month)))).click()        

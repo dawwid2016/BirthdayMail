@@ -55,7 +55,7 @@ def send(df):
         birthday = df.iloc[count, 1]
         mailAddress = df.iloc[count, 2]       
         title = "Happy Birthday!"
-        content = "Hi %s,\n     Happy Birthday to you! \n EMA office"%(name)
+        content = "Hi %s,\n     Happy Birthday to you! \n XXX office"%(name)
         # Receiver
         address = driver.find_element_by_id("InputEx_To")
         ActionChains(driver).move_to_element(address).send_keys(mailAddress).send_keys(Keys.RETURN).perform()

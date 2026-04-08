@@ -1,6 +1,5 @@
 #! -*- coding utf-8 -*-
 #! @Time  :2021/1/19 15:05
-#! Author :Jiacheng Zhang
 #! @File  :BirthdayPJ.py
 #! Python Version 3.9.1
 
